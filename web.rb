@@ -5,6 +5,6 @@ get '/hi' do
 end
 
 # verification token
-get '/loaderio-ec918e838e691ac73089527347514d82/'
+get '/loaderio-ec918e838e691ac73089527347514d82/' do
   "loaderio-ec918e838e691ac73089527347514d82"
 end

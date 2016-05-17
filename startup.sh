@@ -1,6 +1,8 @@
 #!/bin/bash
 gem install sinatra
+curl https://raw.githubusercontent.com/tifftalk/docker-sinatra/master/web.rb > /web.rb
 cp /web.rb /usr/src/app/web.rb
+
 if [ "$RACK_ENV" == "production" ];
 then
   bundle install --without development test
