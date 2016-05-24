@@ -1,7 +1,5 @@
 version: '2'
 services:
-  db:
-    image: postgres
   web:
     build: .
     command: /bin/bash /startup.sh
@@ -9,5 +7,5 @@ services:
     #   - .:/usr/src/app
     ports:
       - "4444:80"
-    depends_on:
-      - db
+    environment:
+      MAIN_APP_FILE: app.rb
